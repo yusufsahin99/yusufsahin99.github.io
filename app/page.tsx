@@ -9,7 +9,7 @@ const publications = [
         Favaro
       </>
     ),
-    venue: 'arXiv, 2026',
+    venue: 'NeurIPS 2026',
     href: 'https://arxiv.org/abs/2606.10829',
     code: 'https://github.com/yusufsahin99/ADAS',
     image: '/adas.jpg',
