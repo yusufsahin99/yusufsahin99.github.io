@@ -189,6 +189,7 @@ h2 {
 }
 
 .authors,
+.contribution,
 .venue,
 .paper-links,
 .description {
@@ -199,6 +200,16 @@ h2 {
 
 .authors {
   color: #454a4e;
+}
+
+.authors sup {
+  margin-left: 1px;
+  font-size: 0.72em;
+}
+
+.contribution {
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .venue {

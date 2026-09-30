@@ -22,10 +22,13 @@ const publications = [
     title: 'Communication-Inspired Tokenization for Structured Image Representations',
     authors: (
       <>
-        Aram Davtyan, <strong>Yusuf Sahin</strong>, Yasaman Haghighi, Sebastian
-        Stapf, Pablo Acuaviva, Alexandre Alahi, Paolo Favaro
+        Aram Davtyan<sup aria-hidden="true">*</sup>,{' '}
+        <strong>Yusuf Sahin</strong>
+        <sup aria-hidden="true">*</sup>, Yasaman Haghighi, Sebastian Stapf,
+        Pablo Acuaviva, Alexandre Alahi, Paolo Favaro
       </>
     ),
+    contribution: '* Equal contribution.',
     venue: 'arXiv, 2026',
     href: 'https://arxiv.org/abs/2602.20731',
     project: 'https://araachie.github.io/comit/',
@@ -155,6 +158,9 @@ export default function Home() {
                   </a>
                 </h3>
                 <p className="authors">{paper.authors}</p>
+                {paper.contribution ? (
+                  <p className="contribution">{paper.contribution}</p>
+                ) : null}
                 <p className="venue">{paper.venue}</p>
                 <p className="paper-links">
                   {paper.code ? (
